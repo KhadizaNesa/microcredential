@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadiza Nesa : Activity 7</title>
+</head>
+<body>
+    <h1>Type your name: Activity 7(Loops)</h1>
+</body>
+<script type="text/javascript">
+    /* Example 1: use for loop
+    //example 1
+    console.log('The current i is 0')
+    console.log('The current i is 1')
+    console.log('The current i is 2')
+    console.log('The current i is 3')
+    console.log('The current i is 4')
+    
+
+   for (let counter =0; counter <=4; counter++){
+    console.log(`The current conter is ${counter}`)
+   }
+
+   //example 2:
+   let num = parseInt(prompt("Enter a number between 0 and 90"))
+
+   for(num; num < 100; num++){
+    if(num % 2 === 0){
+        console.log(num)
+    }
+   }
+
+   for(let num  = 100; num >= 0; num -=10){
+    console.log(num)
+   }
+  
+
+  let cars = ['Mazda', 'Tesla', 'Toyota', 'Honda', 'BMW', 'Porsche']
+
+  for (let i=0; i< cars.length; i++){
+    console.log(`Car ${i+1} = ${cars[i]}`)
+  }
+ 
+
+  // example 5) use for ... of loop print each item in array
+
+  let cars = ['Mazda', 'Tesla', 'Toyota', 'Honda', 'BMW', 'Porsche']
+
+  for (let eachCar of Cars){
+    console.log(eachCar)}
+
+// example 5) using a loop to print each cahracter
+let myString = "World!";
+for(let eachletter of myString){
+    console.log(eachletter)
+}
+
+
+
+let foods = ['salad', 'pizza', 'tofu', 'cheese burger']
+
+for(let item = 0; items<foods.length; item++){
+    if((item+1) % 2 === 0){
+        x = foods[i].toUpperCase();
+        console.log('I want some' + x);
+    }
+    else{
+        cosnole.log('I want some ' + foods[i]);
+    }
+}
+
+
+for(let outerCounter = 1; outerCounter <= 5; outerCounter++){
+    console.log(`Outer loop count \t\t\t ${outerCounter}`)
+    for(let innerCounter = 30; innerCounter >=0; innerCounter -=10){
+        console.log(`innercounter = ${innerCounter}`)
+    }
+}
+
+
+// example 9
+let initial = 0;
+while(initial<= 4){
+    console.log(`The current is = ${initial}`);
+    initial++;
+ }
+
+ 
+ 
+
+//example 10) infinite while loop
+
+const SECRET = 8;
+
+let numberUser = parseInt(prompt("Enter a number between 0 and 10: "))
+
+while(numberUser !== SECRET){
+    numberUser = parseInt(prompt("Wrong! Enter another number between 0 and 10: "))
+}
+
+// example 11)
+
+for ( let counter = 20; counter>=0; conter--){
+    console.log(`Counter = ${counter}`)
+    if(counter === 9){
+        break
+    }
+    console.log(`Counter = ${counter}`)
+}
+
+
+
+// example 12
+
+let userPick = parseInt(prompt('Enter a number between 0 and 10'))
+for(counter=0; counter<=10; counter++){
+    if(counter=== userPick){
+        continue
+    }
+    console.log(`counter = ${counter}`)
+}
+
+ */
+
+//Activity 7
+// a) while loop nesting with if - else if – else statement
+let userInput = prompt("Enter anumber between 1 to 10")
+let userNum = parseInt(userInput)
+
+while (!(userInput >= 1 && userInput <= 10) || isNaN(userNum)){
+
+    if(userInput < 1){
+        userInput = prompt(`${userInput} is less than 1. Enter a number greater than 1.`)
+        userNum =parseInt(userInput)
+    }
+    else if(userInput > 10){
+        userInput = prompt(`${userInput} is greater than 10. Enter a number less than 10.`)
+        userNum =parseInt(userInput)
+
+    }
+    else if (isNaN(userNum)){
+        userInput = prompt(`${userInput} is not a number. Enter a number again`)
+        userNum =parseInt(userInput)
+
+    }
+}
+console.log(`You Entered ${userInput}`)
+for( i = userInput; i <= 20; i++){
+        console.log(`The number is ${i}`)
+    }
+    
+
+
+</script>
+</html>
